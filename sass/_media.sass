@@ -1,30 +1,33 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
+
 @media ( max-width: 992px )
   .container
     max-width: 700px
-.logo
-  width: 132px
-.navbar
-  &-top
-    padding-top: 30px
-    padding-bottom: 30px
-  &__search
-    max-width: 340px
-    margin-left: auto
-  &-menu
-    padding-top: 22px
-    padding-bottom: 22px
-    &__link
-      font-size: 12px
-      line-height: 15px
+  .logo
+    width: 132px
+    &__image
+      width: 132px
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      max-width: 340px
+      margin-left: auto
+    &-menu
+      padding-top: 22px
+      padding-bottom: 22px
+      &__link
+        font-size: 12px
+        line-height: 15px
 
-.search
-  &__input
-    width: 340px
+  .search
+    &__input
+      width: 340px
 
-@media ( max-width: 768px )
+@media ( max-width: 767px )
   .container
     max-width: 576px
     width: 92%
@@ -66,6 +69,23 @@
       &__name
         margin-bottom: 0
 
+@media ( max-width: 767px )
+  .hotel
+    &-info
+      &__name
+        padding-top: 10px
+
 @media ( max-width: 576px )
+  .hotel
+    &-info
+      &__name
+        padding-top: 10px
+  .navbar
+    &-top
+      padding: 28px 0
+  .container
+    max-width: 90%
   .logo
     width: 99px
+  .hotel
+    padding-top: 0

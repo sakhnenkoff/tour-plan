@@ -644,6 +644,10 @@ template {
 }
 
 @media (max-width: 576px) {
+  .hotel-info__description {
+    font-size: 12px;
+    line-height: 15px;
+  }
   .hotel-info__name {
     padding-top: 10px;
   }
@@ -653,8 +657,9 @@ template {
   .container {
     max-width: 90%;
   }
-  .logo {
+  .logo__image {
     width: 99px;
+    height: 13px;
   }
   .hotel {
     padding-top: 0;

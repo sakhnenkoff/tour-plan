@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Muli' , sans-serif;
+  font-family: 'Mulish' , sans-serif;
   color: #333333;
   background-color: #F5FAFE;
 }
@@ -662,8 +662,11 @@ template {
 }
 
 .booking__description {
+  margin: 0;
   margin-left: 9px;
   margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .booking__heading {

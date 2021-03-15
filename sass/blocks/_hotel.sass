@@ -14,11 +14,14 @@
       margin-bottom: 0
     &__description
       margin: 5px 0
-
+  &-slider
+    width: 728px
+    height: 450px
   &-name
     font-size: 24px
     line-height: 30px
-
+  &-booking
+    margin-bottom: 27px
   &-wrapper
     display: flex
     flex-wrap: wrap
@@ -27,6 +30,7 @@
     font-size: 11px
     line-height: 15px
   &-grid
+    height: 100%
     display: flex
     justify-content: space-between
 
@@ -77,8 +81,6 @@
     right: 0
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     z-index: 10
-.slider
-  width: 728px
 
   &-button
     top: 50%
@@ -169,3 +171,5 @@
   width: 347px
   height: 217px
   background-color: black
+  border-radius: 10px
+  overflow: hidden

@@ -503,7 +503,9 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .hotel-slider {
@@ -988,6 +990,32 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hotel-name {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    justify-content: space-between;
+  }
+  .hotel-info {
+    padding-bottom: 30px;
+  }
+  .hotel-slider {
+    height: 179px;
+    margin-bottom: 20px;
+  }
+  .hotel-right {
+    flex-direction: column;
+  }
+  .hotel .booking {
+    width: 100%;
+  }
+  .hotel .map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */

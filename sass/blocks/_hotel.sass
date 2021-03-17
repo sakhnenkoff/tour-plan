@@ -19,6 +19,43 @@
   &-slider
     width: 728px
     height: 450px
+    &__button
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      position: absolute
+      width: 30px
+      height: 30px
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      &--next
+        right: 18px
+        background-image: url(../img/arrow-next.svg)
+      &--prev
+        left: 18px
+        background-image: url(../img/arrow-prev.svg)
+  &-slide
+    &__image
+      width: 100%
+  &-swiper
+    &-container
+      width: 100%
+      height: 100%
+      position: relative
+      border-radius: 8px
+      &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
   &-name
     font-size: 24px
     line-height: 30px
@@ -65,27 +102,6 @@
   &__counter
     font-size: 14px
     line-height: 18px
-
-.swiper
-  &-slide
-    &__image
-      width: 100%
-  &-container
-    width: 100%
-    height: 100%
-    position: relative
-    border-radius: 8px
-    &:after
-      content: ''
-      position: absolute
-      width: 100%
-      height: 100%
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
-      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-      z-index: 10
 
 .booking
   background-color: $dark
@@ -163,22 +179,3 @@
   background-color: black
   border-radius: 10px
   overflow: hidden
-
-.slider
-  &-button
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 99
-    position: absolute
-    width: 30px
-    height: 30px
-    cursor: pointer
-    background-repeat: no-repeat
-    background-position: center
-    background-size: 10px
-    &--next
-      right: 18px
-      background-image: url(../img/arrow-next.svg)
-    &--prev
-      left: 18px
-      background-image: url(../img/arrow-prev.svg)

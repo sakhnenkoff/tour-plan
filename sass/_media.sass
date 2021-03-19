@@ -1,6 +1,9 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
+  .card
+    width: 230px
+    height: 230px
   .hotel
     &-slider
       width: 590px
@@ -9,11 +12,11 @@
         height: 100%
         width: 100%
         object-fit: cover
-  &-container
-    width: 100%
-    height: 100%
-    position: relative
-    border-radius: 8px
+    &-container
+      width: 100%
+      height: 100%
+      position: relative
+      border-radius: 8px
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -54,6 +57,14 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 250px
 
 @media ( max-width: 767px )
   .container
@@ -121,7 +132,6 @@
           display: none
       &__button
         top: 45px
-
         &--prev
           left: 50%
           margin-left: - 65px
@@ -130,6 +140,13 @@
           right: 50%
           margin-right: - 65px
           transform: translate(50%, 0)
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+  .card
+    width: 48%
+    height: 255px
 
 @media ( max-width: 767px )
   .hotel
@@ -167,6 +184,18 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .card
+    width: 100%
+  .reviews
+    padding-bottom: 50px
+    &__title
+      font-size: 25px
+  .activities
+    padding-top: 40px
+    &__title
+      font-size: 19px
+      line-height: 23px
+      margin-bottom: 36px
 
 @media ( max-width: 320px )
   .hotel
@@ -182,7 +211,23 @@
       margin-bottom: 20px
     &-right
       flex-direction: column
-    .booking
-      width: 100%
-    .map
-      height: 173px
+  .booking
+    width: 100%
+  .map
+    height: 173px
+  .newsletter
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+  .reviews
+    padding-bottom: 50px
+    &__title
+      font-size: 19px
+      line-height: 23px
+  .activities
+    padding-top: 40px
+    &__title
+      font-size: 19px
+      line-height: 23px
+      margin-bottom: 36px

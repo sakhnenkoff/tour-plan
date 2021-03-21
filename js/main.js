@@ -38,3 +38,12 @@ const reviewSwiper = new Swiper('.reviews-slider', {
   
   
 });
+
+var menuButton = document.querySelector(".menu-button");
+
+menuButton.addEventListener("click", function() {
+  console.log("Click on menu button");
+  document
+  .querySelector(".navbar-bottom")
+  .classList.toggle("navbar-bottom--visible")
+});

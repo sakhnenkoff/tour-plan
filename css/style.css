@@ -770,6 +770,7 @@ template {
 }
 
 .newsletter-title {
+  text-transform: lowercase;
   color: white;
   font-weight: 300;
   font-size: 24px;
@@ -777,6 +778,7 @@ template {
 }
 
 .newsletter-title__strong {
+  text-transform: uppercase;
   display: block;
   font-weight: 600;
   font-size: 36px;

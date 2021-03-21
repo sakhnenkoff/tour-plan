@@ -17,6 +17,10 @@
       height: 100%
       position: relative
       border-radius: 8px
+  .footer
+    &__input
+      flex-basis: 100%
+
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -65,6 +69,35 @@
   .card
     width: 339px
     height: 250px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6,1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contacts
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
 
 @media ( max-width: 767px )
   .container
@@ -112,10 +145,14 @@
       margin-bottom: 30px
     &-right
       flex-direction: column
-    .booking
-      width: 100%
-    .map
-      width: 100%
+  .booking
+    width: 100%
+  .map
+    width: 100%
+  .footer
+    &-bt
+      &__empty-box
+        display: none
 
   .newsletter
     &-wrapper
@@ -147,6 +184,9 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 
 @media ( max-width: 767px )
   .hotel
@@ -196,6 +236,59 @@
       font-size: 19px
       line-height: 23px
       margin-bottom: 36px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        align-self: center
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__contacts
+      &-form
+        grid-column: 1
+        grid-row: 7
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+    &__message
+      height: 123px
+      width: 100%
+      margin-bottom: 15px
+    &__button
+      &-wrapper
+        flex-basis: 100%
+    &__info
+      order: 4
+      margin-bottom: 15px
+    &-bt
+      flex-wrap: wrap
+      &__links
+        min-width: 283px
+        display: flex
+        flex-basis: 100%
+        justify-content: space-between
+        margin-bottom: 10px
+      &--link
+        color: $light
+        text-decoration: none
+    &__img
+      width: 136px
+      height: 22px
 
 @media ( max-width: 320px )
   .hotel

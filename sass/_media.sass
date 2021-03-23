@@ -104,7 +104,7 @@
     max-width: 576px
     width: 92%
   body
-    padding-top: 78px
+    padding-top: 75px
   .navbar
     &--mobile
       &_fixed
@@ -113,6 +113,7 @@
         top: 0
         right: 0
         z-index: 99
+        overflow: auto
     &__user , &__search
       &--mobile
         &_hidden
@@ -130,6 +131,7 @@
       bottom: 0
       top: 78px
       padding-top: 30px
+      overflow: scroll
       &--visible
         display: block
     &-menu
@@ -164,7 +166,6 @@
         color: $light
         margin-left: 0
 
-  color:
   .stars
     flex-basis: auto
   .hotel
@@ -249,6 +250,8 @@
     &-slider
       height: 350px
   .navbar
+    &__search
+      width: 90%
     &-top
       padding: 28px 0
   .container
@@ -367,3 +370,6 @@
       font-size: 19px
       line-height: 23px
       margin-bottom: 36px
+  .search
+    &__input
+      width: 100%

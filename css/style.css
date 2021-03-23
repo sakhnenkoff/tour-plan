@@ -436,6 +436,7 @@ template {
 }
 
 .search__button {
+  outline: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -1185,6 +1186,16 @@ template {
   height: 22px;
 }
 
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1316,7 +1327,7 @@ template {
     width: 92%;
   }
   body {
-    padding-top: 78px;
+    padding-top: 75px;
   }
   .navbar--mobile_fixed {
     position: fixed;
@@ -1324,6 +1335,7 @@ template {
     top: 0;
     right: 0;
     z-index: 99;
+    overflow: auto;
   }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
@@ -1343,6 +1355,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow: scroll;
   }
   .navbar-bottom--visible {
     display: block;
@@ -1478,6 +1491,9 @@ template {
   }
   .hotel-slider {
     height: 350px;
+  }
+  .navbar__search {
+    width: 90%;
   }
   .navbar-top {
     padding: 28px 0;
@@ -1629,6 +1645,9 @@ template {
     font-size: 19px;
     line-height: 23px;
     margin-bottom: 36px;
+  }
+  .search__input {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,15 +28,17 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'matvey.sakhnenko@gmail.com'; // Логин на почте
-    $mail->Password   = 'qynvgdioxjcfoxbx'; // Пароль на почте
+    $mail->Host       = 'mail.sakhnenkoff.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'matthew.sakhnenko@sakhnenkoff.ru'; // Логин на почте
+    $mail->Password   = 'mailpassmatthew'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('matvey.sakhnenko@gmail.com', 'Матвей Сахненко'); // Адрес самой почты и имя отправителя
+    $mail->SMTPAutoTLS = false;
+    $mail->SMTPSecure = false;
+    $mail->Port       = 25;
+    $mail->setFrom('matthew.sakhnenko@sakhnenkoff.ru', 'Матвей Сахненко'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('matvey.sakhnenko03@icloud.com');  
+    $mail->addAddress('matvey.sakhnenko@gmail.com');  
 
 // Отправка сообщения
 $mail->isHTML(true);

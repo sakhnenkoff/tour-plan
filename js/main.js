@@ -58,7 +58,7 @@ modalButton.on('click', openModal);
 closeModalButton.on('click', closeModal);
 
 function openModal() {
-   var targetModal = $(this).attr("#data-href");
+   var targetModal = $(this).attr("data-href");
    var modalOverlay = $(".modal__overlay");
    var modalDialog = $(".modal__dialog");
    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
@@ -72,5 +72,6 @@ function closeModal(event) {
    modalOverlay.removeClass("modal__overlay--visible");
    modalDialog.removeClass("modal__dialog--visible");
 }
+
 
 });

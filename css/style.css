@@ -23,8 +23,6 @@ textarea {
 
 .button {
   outline: 0;
-  min-width: 160px;
-  min-height: 50px;
   padding: 18px;
   color: white;
   background-color: #EC1F46;
@@ -1266,6 +1264,11 @@ template {
   text-align: center;
 }
 
+.modal__button {
+  width: 160px;
+  height: 50px;
+}
+
 .modal__button-wrapper {
   display: flex;
   align-items: center;
@@ -1394,6 +1397,22 @@ template {
   .footer__contact-details {
     grid-row: 3;
     grid-column: span 5;
+  }
+  .modal__dialog {
+    max-width: 92%;
+  }
+  .modal_buttom-wrapper {
+    display: flex;
+  }
+  .modal__info {
+    text-align: right;
+    font-size: 10px;
+  }
+  .modal__input {
+    min-width: 100%;
+  }
+  .modal__message {
+    min-width: 100%;
   }
 }
 
@@ -1554,6 +1573,14 @@ template {
   }
 }
 
+@media (max-height: 520px) {
+  .modal__dialog {
+    overflow: scroll;
+    padding: 84px 44px;
+    height: 90%;
+  }
+}
+
 @media (max-width: 576px) {
   .hotel {
     padding-bottom: 40px;
@@ -1675,6 +1702,11 @@ template {
   .footer__img {
     width: 136px;
     height: 22px;
+  }
+  .modal__dialog {
+    overflow: scroll;
+    padding: 84px 44px;
+    height: 90%;
   }
 }
 

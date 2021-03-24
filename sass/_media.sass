@@ -98,6 +98,20 @@
       &-details
         grid-row: 3
         grid-column: span 5
+  .modal
+    &__dialog
+      max-width: 92%
+    &_buttom
+      &-wrapper
+        display: flex
+    &__button
+    &__info
+      text-align: right
+      font-size: 10px
+    &__input
+      min-width: 100%
+    &__message
+      min-width: 100%
 
 @media ( max-width: 767px )
   .container
@@ -238,6 +252,13 @@
       &__name
         padding-top: 10px
 
+@media ( max-height: 520px )
+  .modal
+    &__dialog
+      overflow: scroll
+      padding: 84px 44px
+      height: 90%
+
 @media ( max-width: 576px )
   .hotel
     padding-bottom: 40px
@@ -335,6 +356,11 @@
     &__img
       width: 136px
       height: 22px
+  .modal
+    &__dialog
+      overflow: scroll
+      padding: 84px 44px
+      height: 90%
 
 @media ( max-width: 320px )
   .hotel

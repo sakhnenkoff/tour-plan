@@ -53,9 +53,11 @@ menuButton.addEventListener("click", function() {
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
+var closeModalSpace = $(".modal__overlay")
 
 modalButton.on('click', openModal);
 closeModalButton.on('click', closeModal);
+closeModalSpace.on('click', closeModal);
 
 function openModal() {
    var targetModal = $(this).attr("data-href");

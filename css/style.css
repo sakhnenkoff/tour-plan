@@ -46,6 +46,11 @@ textarea {
   border: none;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1153,6 +1158,10 @@ template {
   order: 2;
 }
 
+.footer__button {
+  min-width: 160px;
+}
+
 .footer__button-wrapper {
   order: 5;
 }
@@ -1240,13 +1249,13 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1270,6 +1279,7 @@ template {
 }
 
 .modal__button-wrapper {
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;

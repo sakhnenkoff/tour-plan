@@ -4,6 +4,8 @@ body
   font-family: 'Mulish' , sans-serif
   color: $text-color
   background-color: $secondary
+.overflow-settings
+  overflow: hidden
 .container
   max-width: 1110px
   margin: auto
@@ -34,5 +36,12 @@ textarea
   border: none
 
 .invalid
+  position: absolute
+  bottom: -11px
+  left: 5px
   color: $primary
   border-bottom: 1px solid $primary
+
+#email-error
+  z-index: 100
+  text-decoration: none

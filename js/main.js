@@ -43,17 +43,24 @@ const reviewSwiper = new Swiper('.reviews-slider', {
 var menuButton = document.querySelector(".menu-button");
 
 menuButton.addEventListener("click", function() {
+  var click = 1;
+   if (click === 0) {
+     $('body').removeClass("overflow-settings")
+   };
+  click = 1;
   console.log("Click on menu button");
   document
   .querySelector(".navbar-bottom")
   .classList.toggle("navbar-bottom--visible")
+  $('body').addClass("overflow-settings")
 });
+
 
 
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
-var closeModalSpace = $(".modal__overlay")
+var closeModalSpace = $(".modal__overlay");
 
 modalButton.on('click', openModal);
 closeModalButton.on('click', closeModal);
@@ -101,5 +108,8 @@ $(".form").each(function() {
 
   AOS.init();
 
+  $('#num').each(function(){
+  $(this).mask('+7(999) 999-99-99');
 
+  });
 });

@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet"
-    rel="preload">
+    >
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"/>
   
 
 </head>
@@ -213,7 +214,7 @@
         </span>
       </h2>
   
-      <form action="send.php" method="POST" class="subscribe newsletter_subscribe form">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
         <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
         <button class="subscribe__button">Send</button>
       </form>
@@ -481,10 +482,10 @@ quest" class="card__image">
           <h3 class="footer__title">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
            <div class="footer__input-wrapper">
-            <input type="text" minlength="2" class="input footer__input" placeholder= "Your Full Name*" name="name"required>
+            <input type="text" minlength="2" class="input footer__input" placeholder= "Your Full Name*" name="name" required>
             </div>
             <div class="footer__input-wrapper">
-            <input type="tel" id="num" minlength="10" class="input footer__input num" placeholder= "Phone Number*" name="phone"required>
+            <input type="tel" minlength="10" class="input footer__input num" placeholder= "Phone Number*" name="phone" required>
             </div>
             <textarea class="message footer__message" placeholder= "Message" name="message"></textarea>
            <div class="footer__button-wrapper"><button class="button footer__button" type="submit">Send</button></div>
@@ -496,9 +497,9 @@ quest" class="card__image">
     <div class="footer-bt">
       <div class="footer-bt__empty-box"></div>
       <div class="footer-bt__links">
-        <a href="#" class="footer-bt__links--link">Disclaimer</a>
-        <a href="#" class="footer-bt__links--link">Conditions of use</a>
-        <a href="#" class="footer-bt__links--link">Cancellation policy</a>
+        <a href="#" class="footer-bt__link">Disclaimer</a>
+        <a href="#" class="footer-bt__link">Conditions of use</a>
+        <a href="#" class="footer-bt__link">Cancellation policy</a>
       </div>
       <img src="img/ft-bt-payment-methods.png" alt="" class="footer-bt__img">
       </div>
@@ -519,10 +520,10 @@ quest" class="card__image">
       <input type="text" minlength="2" class="input modal__input" placeholder="Your Full Name*" name="name" required>
     </div>
     <div class="modal__input-group">
-      <input type="tel" id="num" minlength="10" class="input modal__input num" placeholder="Phone Number*" name="phone" required>
+      <input type="tel"  minlength="10" class="input modal__input num" placeholder="Phone Number*" name="phone" required>
     </div>
       <div class="modal__input-group">
-        <input type="email" id="email-fix" class="input modal__input" placeholder="e-mail adress*" name="email" required>
+        <input type="email" class="input modal__input email-fix" placeholder="e-mail adress*" name="email" required>
       </div>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
       <div class="modal__button-wrapper"><button class="button modal__button" type="submit">Send</button>
@@ -549,10 +550,10 @@ quest" class="card__image">
             <input type="text" minlength="2" class="input modal__input" placeholder="Your Full Name*" name="name" required>
           </div>
           <div class="modal__input-group">
-          <input type="tel" id="num" minlength="10" class="input modal__input num" placeholder="Phone Number*" name="phone" required>
+          <input type="tel" minlength="10" class="input modal__input num" placeholder="Phone Number*" name="phone" required>
           </div>
           <div class="modal__input-group">
-        <input type="email" id="email-fix" class="input modal__input" placeholder="e-mail adress*" name="email" required>
+        <input type="email" class="input modal__input email-fix" placeholder="e-mail adress*" name="email" required>
         </div>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__button-wrapper">

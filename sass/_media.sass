@@ -147,6 +147,7 @@
       padding-top: 30px
       overflow: scroll
       &--visible
+        height: 100%
         display: block
     &-menu
       flex-direction: column
@@ -252,6 +253,18 @@
     &-info
       &__name
         padding-top: 10px
+
+@media ( max-height: 640px )
+  .modal
+    &__dialog
+      max-height: 70%
+      overflow: auto
+
+@media ( max-height: 420px )
+  .modal
+    &__dialog
+      max-height: 50%
+      overflow: auto
 
 @media ( max-height: 520px )
   .modal
@@ -360,19 +373,23 @@
   .modal
     &__dialog
       overflow: auto
-      padding: 84px 44px
-      max-height: 90%
+      padding: 60px 44px
+      max-height: 70%
 
 @media ( max-width: 365px )
-  #email-fix
-    margin-bottom: 10px
+  .email
+    &-fix
+      margin-bottom: 10px
 
 @media ( max-width: 326px )
   label.invalid
     font-size: 11px
     bottom: -15px
     left: 5px
-
+@media ( max-height: 405px )
+  .modal
+    &__dialog
+      max-height: 60%
 @media ( max-width: 320px )
   .hotel
     &-name

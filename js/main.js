@@ -25,6 +25,8 @@ const reviewSwiper = new Swiper('.reviews-slider', {
 
   loop: true,
 
+  autoHeight: true,
+
   // Navigation arrows
   navigation: {
     nextEl: '.reviews-slider__button--next',

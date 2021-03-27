@@ -68,7 +68,6 @@ a {
 }
 
 #email-error {
-  z-index: 100;
   text-decoration: none;
 }
 
@@ -1471,7 +1470,7 @@ template {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999999;
     overflow: auto;
   }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {

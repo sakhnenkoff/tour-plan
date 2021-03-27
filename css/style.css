@@ -57,7 +57,7 @@ textarea {
 
 label.invalid {
   color: #EC1F46;
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   bottom: -15px;
   left: 5px;
@@ -1616,7 +1616,7 @@ template {
 
 @media (max-height: 520px) {
   .modal__dialog {
-    overflow: scroll;
+    overflow: auto;
     padding: 84px 44px;
     height: 90%;
   }

@@ -51,11 +51,16 @@ textarea {
 }
 
 .invalid {
-  position: absolute;
-  bottom: -11px;
-  left: 5px;
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
+}
+
+label.invalid {
+  color: #EC1F46;
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  left: 5px;
 }
 
 #email-error {
@@ -1161,6 +1166,7 @@ template {
 }
 
 .footer__input-wrapper {
+  position: relative;
   margin-top: 15px;
   flex-basis: 48%;
   order: 1;
@@ -1244,7 +1250,7 @@ template {
   border-radius: 8px;
   color: white;
   z-index: 101;
-  max-width: 478px;
+  width: 478px;
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
@@ -1267,6 +1273,10 @@ template {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+}
+
+.modal__input-group {
+  position: relative;
 }
 
 .modal__message {
@@ -1734,6 +1744,20 @@ template {
     overflow: auto;
     padding: 84px 44px;
     height: 90%;
+  }
+}
+
+@media (max-width: 365px) {
+  #email-fix {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 326px) {
+  label.invalid {
+    font-size: 11px;
+    bottom: -15px;
+    left: 5px;
   }
 }
 

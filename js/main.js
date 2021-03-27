@@ -108,7 +108,7 @@ $(".form").each(function() {
 
   AOS.init();
 
-  $('#num').each(function(){
+  $('.num').each(function(){
   $(this).mask('+7(999) 999-99-99');
 
   });

@@ -43,19 +43,14 @@ const reviewSwiper = new Swiper('.reviews-slider', {
 var menuButton = document.querySelector(".menu-button");
 
 menuButton.addEventListener("click", function() {
-  var click = 1;
-   if (click === 0) {
-     $('body').removeClass("overflow-settings")
-   };
-  click = 1;
   console.log("Click on menu button");
   document
   .querySelector(".navbar-bottom")
-  .classList.toggle("navbar-bottom--visible")
-  $('body').addClass("overflow-settings")
+  .classList.toggle("navbar-bottom--visible");
+  document
+  .querySelector("body")
+  .classList.toggle("overflow-settings");
 });
-
-
 
 
 var modalButton = $("[data-toggle=modal]");
@@ -110,6 +105,6 @@ $(".form").each(function() {
 
   $('.num').each(function(){
   $(this).mask('+7(999) 999-99-99');
-
+ 
   });
 });

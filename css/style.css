@@ -63,6 +63,10 @@ label.invalid {
   left: 5px;
 }
 
+a {
+  display: inline-block;
+}
+
 #email-error {
   z-index: 100;
   text-decoration: none;
@@ -863,6 +867,7 @@ template {
   top: 0;
   height: 100%;
   border: none;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .reviews {

@@ -87,14 +87,15 @@
     width: 339px
     height: 250px
   .footer
-    padding-top: 73px
+    padding-top: 63px
     &__social-network
       flex-wrap: nowrap
     &-wrapper
-      grid-template-columns: repeat(6,1fr)
-      grid-row-gap: 40px
+      grid-template-columns: 96px 91px 167px 75px 109px 92px
+      grid-row-gap: 45px
       grid-column-gap: 0
     &-bt
+      padding-top: 59px
       &__links
         transform: none
       &__empty-box
@@ -102,7 +103,7 @@
     &__input
       flex-basis: 49%
     &__logo
-      width: 104px
+      width: 97px
       height: 120px
       grid-row: 1/2
       grid-column: span 2
@@ -142,6 +143,9 @@
       min-width: 100%
   .newsletter
     margin-top: 15px
+  .slider
+    &__button
+      margin-top: 14px
 
 @media ( max-width: 767px )
   .container
@@ -309,7 +313,7 @@
 
 @media ( max-width: 576px )
   .hotel
-    padding-bottom: 40px
+    padding-bottom: 27px
     &-info
       &__description
         font-size: 12px
@@ -339,7 +343,7 @@
   .hotel
     padding-top: 0
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 77px 0 83px 0
     &__title
       margin-bottom: 37px
   .subscribe
@@ -351,12 +355,22 @@
     &__title
       font-size: 25px
   .activities
-    padding-top: 40px
+    padding-top: 48px
     padding-bottom: 60px
     &__title
       font-size: 19px
       line-height: 23px
       margin-bottom: 36px
+    &__card
+      &:nth-child(1)
+        order 1
+      &:nth-child(2)
+        order 3
+      &:nth-child(3)
+        order 2
+        margin-bottom: 28px
+      &:nth-child(4)
+        order 4
   .footer
     &-wrapper
       grid-template-columns: 1fr

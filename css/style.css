@@ -932,12 +932,12 @@ template {
 }
 
 .reviews-slider__button--prev {
-  left: 0;
+  left: 18px;
   background-image: url(../img/arrow-prev-secondary.svg);
 }
 
 .reviews-slider__button--next {
-  right: 0;
+  right: 18px;
   background-image: url(../img/arrow-next-secondary.svg);
 }
 
@@ -1449,15 +1449,18 @@ template {
     height: 250px;
   }
   .footer {
-    padding-top: 73px;
+    padding-top: 63px;
   }
   .footer__social-network {
     flex-wrap: nowrap;
   }
   .footer-wrapper {
-    grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-template-columns: 96px 91px 167px 75px 109px 92px;
+    grid-row-gap: 45px;
     grid-column-gap: 0;
+  }
+  .footer-bt {
+    padding-top: 59px;
   }
   .footer-bt__links {
     transform: none;
@@ -1469,7 +1472,7 @@ template {
     flex-basis: 49%;
   }
   .footer__logo {
-    width: 104px;
+    width: 97px;
     height: 120px;
     grid-row: 1/2;
     grid-column: span 2;
@@ -1515,6 +1518,9 @@ template {
   }
   .newsletter {
     margin-top: 15px;
+  }
+  .slider__button {
+    margin-top: 14px;
   }
 }
 
@@ -1706,7 +1712,7 @@ template {
 
 @media (max-width: 576px) {
   .hotel {
-    padding-bottom: 40px;
+    padding-bottom: 27px;
   }
   .hotel-info__description {
     font-size: 12px;
@@ -1741,7 +1747,7 @@ template {
     padding-top: 0;
   }
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 77px 0 83px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
@@ -1759,13 +1765,16 @@ template {
     font-size: 25px;
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 48px;
     padding-bottom: 60px;
   }
   .activities__title {
     font-size: 19px;
     line-height: 23px;
     margin-bottom: 36px;
+  }
+  .activities__card:nth-child(3) {
+    margin-bottom: 28px;
   }
   .footer-wrapper {
     grid-template-columns: 1fr;

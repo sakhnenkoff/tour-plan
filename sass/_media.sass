@@ -75,9 +75,10 @@
         max-width: 580px
     &__title
       font-size: 30px
-      margin-bottom: 60px
+      margin-bottom: 50px
   .activities
-    padding-top: 20px
+    padding-top: 30px
+    padding-bottom: 60px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -87,9 +88,17 @@
     height: 250px
   .footer
     padding-top: 73px
+    &__social-network
+      flex-wrap: nowrap
     &-wrapper
       grid-template-columns: repeat(6,1fr)
       grid-row-gap: 40px
+      grid-column-gap: 0
+    &-bt
+      &__links
+        transform: none
+      &__empty-box
+        display: none
     &__input
       flex-basis: 49%
     &__logo
@@ -402,6 +411,15 @@
     &__img
       width: 136px
       height: 22px
+    &__social-network
+      flex-wrap: wrap
+    &__social-links
+      margin-top: 20px
+    &__title--inline
+      width: 100%
+    &__button
+      padding-top: 13px
+      padding-bottom: 13px
   .modal
     &__dialog
       overflow: auto
@@ -433,6 +451,7 @@
 @media ( max-width: 320px )
   .hotel
     &-name
+      margin-top: 0
       margin-left: 0
       flex-basis: 100%
     &-wrapper
@@ -449,23 +468,44 @@
   .map
     height: 173px
   .newsletter
+    padding-top: 60px
+    margin-bottom: 20px
     &-title
       font-weight: 300
       font-size: 20px
       line-height: 25px
+      margin-top: 0
+      margin-bottom: 0
+      padding-bottom: 40px
       &__strong
         font-size: 30px
   .reviews
-    padding-bottom: 50px
+    padding-top: 20px
+    padding-bottom: 25px
+    &-slider__button--prev
+      left: 42%
+    &-slider__button--next
+      right: 40%
     &__title
       font-size: 18px
       line-height: 23px
+      margin-bottom: 40px
   .activities
     padding-top: 40px
     &__title
       font-size: 19px
+      margin-top: 20px
       line-height: 23px
       margin-bottom: 36px
   .search
     &__input
       width: 100%
+  .navbar-top
+    padding-top: 25px
+    padding-bottom: 25px
+  .stars
+    margin-right: 10px
+  .footer
+    padding-top: 60px
+    &-bt
+      padding-top: 25px

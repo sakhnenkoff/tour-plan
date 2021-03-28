@@ -21,6 +21,16 @@
     &__input
       flex-basis: 100%
 
+@media ( min-width: 992px )
+  a
+    &:hover
+      text-decoration: underline
+  button
+    &:hover
+      background-color: #d8082e
+    &:active
+      background-color: #4e0d0d
+
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -247,12 +257,16 @@
     &__input
       &-wrapper
         flex-basis: 100%
+  .activities
+    padding-bottom: 70px
 
 @media ( max-width: 767px )
   .hotel
     &-info
       &__name
         padding-top: 10px
+    &-booking
+      margin-bottom: 20px
 
 @media ( max-height: 640px )
   .modal
@@ -285,6 +299,11 @@
     &-slider
       height: 350px
   .navbar
+    &--mobile
+      &_fixed
+        padding-bottom: 5px
+    &__bottom
+      &--visible
     &__search
       width: 90%
     &-top
@@ -313,6 +332,7 @@
       font-size: 25px
   .activities
     padding-top: 40px
+    padding-bottom: 60px
     &__title
       font-size: 19px
       line-height: 23px
@@ -390,6 +410,7 @@
   .modal
     &__dialog
       max-height: 60%
+
 @media ( max-width: 320px )
   .hotel
     &-name
@@ -413,10 +434,12 @@
       font-weight: 300
       font-size: 20px
       line-height: 25px
+      &__strong
+        font-size: 30px
   .reviews
     padding-bottom: 50px
     &__title
-      font-size: 19px
+      font-size: 18px
       line-height: 23px
   .activities
     padding-top: 40px

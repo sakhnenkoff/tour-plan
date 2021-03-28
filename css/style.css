@@ -61,35 +61,20 @@ textarea {
 
 label.invalid {
   color: #EC1F46;
-  font-size: 10px;
+  font-weight: 700;
+  font-size: 11px;
   position: absolute;
-  bottom: -15px;
+  bottom: -14px;
   left: 5px;
 }
 
 a {
-  text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 
-a:not(.logo, .navbar__user, .footer__logo, .footer__link):hover {
-  transition-duration: 0.3s;
-  opacity: 1;
-  background: #EC1F46;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  border: 1px solid white;
-  opacity: 20%;
-  transition-duration: 0.3s;
-  opacity: 1;
-  background: #0A223D;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
+.button-thankyou:hover {
+  text-decoration: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -589,6 +574,10 @@ template {
   line-height: 15px;
 }
 
+.hotel-info__rating {
+  cursor: pointer;
+}
+
 .hotel-slider {
   width: 728px;
   height: 450px;
@@ -788,8 +777,8 @@ template {
 
 .booking__button {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   min-height: 45px;
   font-weight: 600;
   font-size: 14px;
@@ -890,7 +879,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 50px 0 70px 0;
 }
 
 .reviews-slider__item {
@@ -1364,6 +1353,18 @@ template {
   }
 }
 
+@media (min-width: 992px) {
+  a:hover {
+    text-decoration: underline;
+  }
+  button:hover {
+    background-color: #d8082e;
+  }
+  button:active {
+    background-color: #4e0d0d;
+  }
+}
+
 @media (max-width: 992px) {
   .container,
   .newsletter-wrapper {
@@ -1628,11 +1629,17 @@ template {
   .footer__input-wrapper {
     flex-basis: 100%;
   }
+  .activities {
+    padding-bottom: 70px;
+  }
 }
 
 @media (max-width: 767px) {
   .hotel-info__name {
     padding-top: 10px;
+  }
+  .hotel-booking {
+    margin-bottom: 20px;
   }
 }
 
@@ -1671,6 +1678,9 @@ template {
   }
   .hotel-slider {
     height: 350px;
+  }
+  .navbar--mobile_fixed {
+    padding-bottom: 5px;
   }
   .navbar__search {
     width: 90%;
@@ -1711,6 +1721,7 @@ template {
   }
   .activities {
     padding-top: 40px;
+    padding-bottom: 60px;
   }
   .activities__title {
     font-size: 19px;
@@ -1836,11 +1847,14 @@ template {
     font-size: 20px;
     line-height: 25px;
   }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
   .reviews {
     padding-bottom: 50px;
   }
   .reviews__title {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 23px;
   }
   .activities {

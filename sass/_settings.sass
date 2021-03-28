@@ -44,29 +44,16 @@ textarea
 
 label.invalid
   color: $primary
-  font-size: 10px
+  font-weight: 700
+  font-size: 11px
   position: absolute
-  bottom: -15px
+  bottom: -14px
   left: 5px
 
 a
-  text-decoration: none
   display: inline-block
+  position: relative
 
-a:not(.logo,.navbar__user,.footer__logo,.footer__link):hover
-  transition-duration: 0.3s
-  opacity: 1
-  background: $primary
-  border-radius: 4px
-  color: $light
-  cursor: pointer
-
-button:hover
-  border: 1px solid $light
-  opacity: 20%
-  transition-duration: 0.3s
-  opacity: 1
-  background: $dark
-  border-radius: 4px
-  color: $light
-  cursor: pointer
+.button-thankyou
+  &:hover
+    text-decoration: none
